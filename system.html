@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System html</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="w-3/4 mx-auto">
+        <h1 class="text-5xl text-center font-semibold mt-8">Let's Get Some <span class="text-red-600"> Mooooney </span> !!!</h1>
+        <div class="grid grid-cols-3 max-auto text-center m-2 gap-4 p-2 text-white">
+            <di class="bg-purple-600 p-8 rounded">
+                <h1 class="text-2xl">Deposit</h1>
+                <h1 id="" class="text-5xl">$<span id="deposit-text">00</span></h1>
+            </di>
+            <div class="bg-yellow-500 p-8 rounded">
+                <h1 class="text-2xl">Withdraw</h1>
+                <h1 class="text-5xl">$<span id="withdraw">00</span></h1>
+            </div>
+            <div class="bg-red-500 p-8 rounded">
+                <h1 class="text-2xl">Total Balance</h1>
+                <h1 class="text-5xl">$<span id="deposit-total">2000</span></h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-pink-300 p-8 rounded">
+                <h1 class="text-green-700">Deposit Amount Field</h1>
+                <input id="deposit-input" class="p-2 block rounded w-3/4" type="number" placeholder="input your need to amount"><br>
+                <button id="deposit-btn" class="bg-purple-600 py-2 px-8 rounded text-white">Deposit</button>
+            </div>
+            <div class="bg-pink-300 p-8 rounded">
+                <h1 class="text-green-700">Withdraw Field</h1>
+                <input id="withdraw-amount" class="p-2 block  border-purple-300 rounded w-3/4" type="number" placeholder="input your need to amount"><br>
+                <button id="withdraw-btn" class="bg-purple-600 py-2 rounded text-white px-8">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="system.js"></script>
+</body>
+</html>
